@@ -1,0 +1,55 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bank</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Bank Account</h1>
+      </div>
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+       <form  class="form1 form-group">
+         <h2>Sign Up</h2>
+      <input type="text"  value="" id="name" class="form-control" placeholder="Enter Name"/>
+      <input type="text" value="" id="initial" class="form-control" placeholder="Enter Initial Deposit"/>
+      <label for="balance">Balance :</label>
+      <label id="balance"></label>
+       </form>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      <form  class="form2 form-group">
+    <h2>Services</h2>
+     <input type="text"  value="" id="deposit" class="form-control" placeholder="Enter Deposit Amount"/>
+     <input type="text" value="" id="withdraw" class="form-control" placeholder="Enter Withdraw Amount"/>
+      </form>
+    </div>
+    </div>
+    <div>
+      <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+      <script type="text/javascript">
+      var database;
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDOgdMoNN06vf0RWp0l_iYRxwTqpRSjbp0",
+        authDomain: "bank-c51e5.firebaseapp.com",
+        databaseURL: "https://bank-c51e5.firebaseio.com/",
+        projectId: "bank-c51e5",
+        storageBucket: "bank-c51e5.appspot.com",
+        messagingSenderId: "427893952621"
+      };
+      firebase.initializeApp(config);
+      database=firebase.database();
+      </script>
+      <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-database.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+  </body>
+  </html>
